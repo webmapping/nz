@@ -34,4 +34,4 @@
 
 11. welche Elemente werden mit dem Schatten in Zeile [76-78](https://github.com/webmapping/nz/blob/main/quiz_main.css#L76-L78) angesprochen?
 
-12. was bewirkt die `@media` Regel in Zeile [82-90](https://github.com/webmapping/nz/blob/main/quiz_main.css#L82-L90)? Könnt ihr sie im Browser reproduzieren?
+12. was bewirkt die `@media` Regel in Zeile [82-90](https://github.com/webmapping/nz/blob/main/quiz_main.css#L81-L90)? Könnt ihr sie im Browser reproduzieren?
