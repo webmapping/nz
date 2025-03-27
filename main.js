@@ -2,10 +2,6 @@
 Skript für die Neuseelandreise
 */
 
-let lat = -39.2;
-let lng = 175.583333;
-let zoom = 11;
-
 let stop = {
     nr: 7,
     title: "Tongariro Nationalpark",
@@ -16,7 +12,7 @@ let stop = {
 };
 
 // Karte initialisieren
-let map = L.map('map').setView([lat, lng], zoom);
+let map = L.map('map').setView([stop.lat, stop.lng], stop.zoom);
 
 // Hintergrundkarte definieren
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -25,13 +21,13 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // Marker zeichnen
-let marker = L.marker([lat, lng]).addTo(map);
+let marker = L.marker([stop.lat, stop.lng]).addTo(map);
 
 // Popup definieren und öffnen
 marker.bindPopup(`
-    <h2>Tongariro Nationalpark</h2>
+    <h2>${stop.title}</h2>
     <ul>
-        <li>Geogr. Breite: ${lat.toFixed(5)}°</li>
-        <li>Geogr. Länge: ${lng.toFixed(5)}°/li>
+        <li>Geogr. Breite: ${stop.lat.toFixed(5)}°</li>
+        <li>Geogr. Länge: ${stop.lng.toFixed(5)}°</li>
     </ul>
 `).openPopup();
